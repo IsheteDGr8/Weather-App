@@ -1,0 +1,117 @@
+/* Apply a smooth font and a soft background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #22b0df, #f0f0f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Center the weather container */
+.weather-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+}
+
+/* Input field styling */
+#cityInput {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-weight: bold;
+}
+
+/* Button styling */
+#searchBtn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#searchBtn:hover {
+    background-color: #fdd835;
+    transform: scale(1.05);
+}
+
+/* City Name Styling */
+.city-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Forecast container - now displayed in a row */
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Each day's forecast */
+.forecast-day {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    width: 100px;
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+}
+
+/* Date Styling */
+.date {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+/* Weather icon styling */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+    display: block;
+}
+
+/* Weather text styling */
+.weather {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Temperature styling */
+.temp {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
